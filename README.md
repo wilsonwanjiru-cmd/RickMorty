@@ -1,14 +1,4 @@
+# Rick & Morty App
 
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-
-## Rick and Morty API
-https://rickandmortyapi.com/api/character# RickMorty
+## Overview
+This project aims to build an app using the Rick & Morty API to retrieve information about locations, characters, and episodes. The app allows users to search for locations, view details about characters, and add persisted notes about characters.
