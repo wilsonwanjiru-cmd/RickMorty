@@ -67,3 +67,57 @@ yarn start
 
 - [Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql)
   - for providing the data used in this project.
+
+## Fetching Images and Enhanced Representation
+
+To fetch images and enhance the representation of characters, modify the GraphQL query in `RickAndMortyData.js` as follows:
+
+```jsx
+const GET_CHARACTERS = gql`
+  query GetCharacters {
+    characters(page: 2, filter: { name: "rick" }) {
+      info {
+        count
+      }
+      results {
+        name
+        status
+        image
+      }
+    }
+  }
+`;
+
+This modified GraphQL query fetches character data including their names, statuses, and image URLs.
+
+
+This format provides clear documentation for modifying the GraphQL query and explains its purpose within your project. 
+
+To update the UI in `RickAndMortyData.js` to display character images along with their names and statuses and apply CSS styling to enhance the representation, modify the `Characters` component as follows:
+
+```jsx
+function Characters() {
+  const { loading, error, data } = useQuery(GET_CHARACTERS);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  return (
+    <div>
+      <h2>Characters</h2>
+      <div className="characters-container">
+        {data.characters.results.map(character => (
+          <div key={character.name} className="character-card">
+            <img src={character.image} alt={character.name} />
+            <p>Name: {character.name}</p>
+            <p>Status: {character.status}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+This modified component fetches character data and displays it with images, names, and statuses. Make sure to apply CSS styling to enhance the representation of character names and statuses.
+
+
+
