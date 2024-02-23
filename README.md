@@ -10,7 +10,7 @@ This project aims to build an app using the Rick & Morty API to retrieve informa
   - React Router
   - Axios
   - CSS (for styling)
-[Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql)
+  - [Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql)
 
 ## Project Structure
 
@@ -42,7 +42,7 @@ Follow these steps to set up the project:
 
 1. **Clone the repository:**
    ```sh
-   git clone <repository-url>
+   git clone <https://github.com/wilsonwanjiru-cmd/RickMorty>
 
 Install dependencies:
 
@@ -62,3 +62,6 @@ or
 
 
 yarn start
+
+ ## Credits ##
+    - [Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql) for providing the data used in this project.
