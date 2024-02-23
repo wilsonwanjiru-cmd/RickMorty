@@ -52,8 +52,10 @@ or
 
 
 yarn install
-npm install axios
-npm install react-router-dom
+
+-  npm install axios
+
+-  npm install react-router-dom
 
 
 Start the development server:
