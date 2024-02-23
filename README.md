@@ -63,5 +63,7 @@ or
 
 yarn start
 
- ## Credits ##
-    - [Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql) for providing the data used in this project.
+## Credits
+
+- [Rick & Morty API](https://rickandmortyapi.com/documentation/#graphql)
+  - for providing the data used in this project.
