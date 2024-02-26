@@ -179,7 +179,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"notes": "This is a test n
 
 ## Images
 
-![Screenshot](https://drive.google.com/file/d/1qlajrgDEHkR8p43BSygojJoXIYUhYt4Q/view?usp=sharing)
+![Screenshot](https://imgur.com/a/Zks2Z5n)
 
 
 
