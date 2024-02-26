@@ -177,7 +177,9 @@ curl http://localhost:5000/api/residents?residentUrl=https://rickandmortyapi.com
 Save Resident Notes
 curl -X POST -H "Content-Type: application/json" -d '{"notes": "This is a test note"}' http://localhost:5000/api/residents/1
 
+## Images
 
+![Screenshot](https://drive.google.com/file/d/1qlajrgDEHkR8p43BSygojJoXIYUhYt4Q/view?usp=sharing)
 
 
 
