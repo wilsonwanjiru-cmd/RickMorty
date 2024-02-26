@@ -124,4 +124,60 @@ function Characters() {
 This modified component fetches character data and displays it with images, names, and statuses. Make sure to apply CSS styling to enhance the representation of character names and statuses.
 
 
+# Rick and Morty Search Application - Backend
+
+## Backend Documentation
+
+### Overview
+
+This backend application serves as the server-side component for the Rick and Morty search application. It provides endpoints to fetch locations and residents data from the Rick and Morty API, as well as to store and retrieve notes for individual residents.
+
+### Technology Stack
+
+- **Python**: Programming language used for backend development.
+- **Flask**: Micro web framework used for building the RESTful API.
+- **SQLite**: Lightweight relational database used for storing resident notes.
+- **Requests**: HTTP library used for making requests to the Rick and Morty API.
+
+## How to Run
+
+1. **Clone the Repository**: Clone the backend repository from [repository URL].
+
+2. **Install Dependencies**: Navigate to the project directory and install dependencies using pip:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Run the Application**: Execute the `app.py` file to start the Flask application:
+
+    ```bash
+    python app.py
+    ```
+
+    The backend server will start running on `http://localhost:5000` by default.
+
+## Endpoints
+
+- **GET /api/locations**: Fetches locations data from the Rick and Morty API.
+- **GET /api/residents**: Fetches resident data from the Rick and Morty API.
+- **POST /api/residents/<resident_id>**: Updates or saves notes for a specific resident.
+
+### Example Usage
+
+#### Fetch Locations
+
+```bash
+curl http://localhost:5000/api/locations?name=earth
+
+Fetch Residents
+curl http://localhost:5000/api/residents?residentUrl=https://rickandmortyapi.com/api/character/1
+
+
+Save Resident Notes
+curl -X POST -H "Content-Type: application/json" -d '{"notes": "This is a test note"}' http://localhost:5000/api/residents/1
+
+
+
+
 
